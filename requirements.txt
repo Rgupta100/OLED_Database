@@ -1,0 +1,6 @@
+psutil
+luma.oled
+luma.core
+Pillow
+gpiozero
+SQLAlchemy
