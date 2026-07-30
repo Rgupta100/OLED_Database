@@ -54,8 +54,6 @@ Without it, the script prints to stdout every 2 s instead.
 
 ## Notes and limitations
 
-- **`Main.py` and `Oled_Screen_Display.py` are byte-identical duplicates.** Only
-  one is needed; the other should be deleted.
 - Nothing prunes the database. At 1 Hz this grows without limit — add a
   retention policy or a longer sample interval before leaving it running.
 - Every sample is its own `INSERT` with no batching, so the SD card takes a
@@ -69,7 +67,6 @@ Without it, the script prints to stdout every 2 s instead.
 
 ```
 Main.py                  collector + display loop
-Oled_Screen_Display.py   duplicate of Main.py
 Database.py              SQLAlchemy model + table creation
 requirements.txt
 ```
